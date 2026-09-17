@@ -137,7 +137,7 @@ a { color: var(--bleu); }
 /* ===== HERO ===== */
 .hero {
   background: linear-gradient(rgba(18,44,52,0.72), rgba(18,44,52,0.72)),
-              url('../images/hero-bg.jpg') center/cover no-repeat;
+              url('hero-bg.jpg') center/cover no-repeat;
   color: var(--blanc);
   padding: 80px 40px 90px;
 }
