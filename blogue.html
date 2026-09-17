@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogue | La Chouette Marketing</title>
+<meta name="description" content="Conseils marketing concrets pour PME au Québec : réseaux sociaux, référencement, identité de marque, IA. Sans jargon, sans blabla.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo La Chouette Marketing">
+      <span>La Chouette Marketing</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="qui-on-est.html">Qui on est</a>
+      <a href="comment-ca-fonctionne.html">Comment ça fonctionne</a>
+      <a href="services.html">Nos services</a>
+      <a href="blogue.html" class="active">Blogue</a>
+      <a href="contact.html">Rendez-vous</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61578278797304" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        <a href="https://www.linkedin.com/company/la-chouette-marketing/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-accent"></div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <h1>Le blogue</h1>
+    <p>Des conseils marketing concrets, sans jargon, pour dirigeants de PME qui ont autre chose à faire que de devenir des experts en marketing.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="blog-cards">
+
+      <a href="ia-marketing-outil-ou-gadget.html" class="blog-card">
+        <p class="blog-date">15 septembre 2026</p>
+        <h3>L'IA en marketing : ce qu'elle change vraiment pour une PME</h3>
+        <p class="blog-excerpt">Entre le battage et le scepticisme, ce que l'intelligence artificielle fait vraiment bien en marketing et ce qu'elle ne remplacera jamais.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+      <a href="seo-local-pme-quebec-bases.html" class="blog-card">
+        <p class="blog-date">12 août 2026</p>
+        <h3>Le SEO local expliqué sans jargon pour les PME au Québec</h3>
+        <p class="blog-excerpt">Le référencement local n'a rien de magique. Voici les trois bases que la plupart des PME oublient, expliquées simplement.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+      <a href="quand-logo-canva-ne-suffit-plus.html" class="blog-card">
+        <p class="blog-date">9 juillet 2026</p>
+        <h3>Votre logo fait le travail depuis trois ans : est-ce le moment de le revoir ?</h3>
+        <p class="blog-excerpt">Les signes qui ne trompent pas et pourquoi revoir son image ne veut pas dire tout recommencer.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+      <a href="budget-marketing-limite-par-ou-commencer.html" class="blog-card">
+        <p class="blog-date">10 juin 2026</p>
+        <h3>Petit budget marketing : cinq façons d'avancer quand même</h3>
+        <p class="blog-excerpt">Un budget limité change la façon d'avancer, pas la possibilité d'avancer. Cinq pistes concrètes pour progresser sans tout dépenser.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+      <a href="cout-reel-gestion-reseaux-sociaux.html" class="blog-card">
+        <p class="blog-date">8 mai 2026</p>
+        <h3>Le coût réel de gérer vos réseaux sociaux vous-même</h3>
+        <p class="blog-excerpt">Gérer ses réseaux soi-même ne coûte pas zéro dollar. Voici comment calculer ce que ça vous coûte vraiment, en temps de dirigeant.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+      <a href="marketing-sans-departement.html" class="blog-card">
+        <p class="blog-date">6 avril 2026</p>
+        <h3>Marketing sans département : par où commencer ?</h3>
+        <p class="blog-excerpt">Pas de service marketing, pas de temps, pas de plan. Par où commencer quand tout repose sur vos épaules.</p>
+        <span class="blog-link">Lire l'article →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center;">
+  <div class="container" style="max-width: 700px;">
+    <h2>On en discute ?</h2>
+    <p>Une rencontre découverte de 20 minutes, gratuite, pour voir ce qui s'applique à votre réalité.</p>
+    <a href="contact.html" class="btn btn-gold">Réserver ma rencontre découverte</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Se tenir informé(e)</h3>
+        <p>Inscrivez-vous à notre <a href="#" style="color:inherit;">infolettre</a> pour des astuces exclusives et des offres spéciales, 4 fois par an !</p>
+        <form class="newsletter-form" action="https://formspree.io/f/meaoqabe" method="POST">
+          <input type="email" name="email" placeholder="Adresse e-mail" required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div class="footer-contact">
+        <a href="#">Montréal, Canada</a>
+        <a href="mailto:evelyn@lachouettemarketing.ca">evelyn@lachouettemarketing.ca</a>
+        <a href="contact.html">Rendez-vous</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 La Chouette Marketing</span>
+      <span>lachouettemarketing.ca</span>
+    </div>
+  </div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

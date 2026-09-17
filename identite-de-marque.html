@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identité de marque et analyse marketing au Québec | La Chouette Marketing</title>
+<meta name="description" content="Création de logo, graphisme et audit marketing pour petites entreprises au Québec. Avant de foncer, il faut savoir où on est.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo La Chouette Marketing">
+      <span>La Chouette Marketing</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="qui-on-est.html">Qui on est</a>
+      <a href="comment-ca-fonctionne.html">Comment ça fonctionne</a>
+      <a href="services.html" class="active">Nos services</a>
+      <a href="blogue.html">Blogue</a>
+      <a href="contact.html">Rendez-vous</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61578278797304" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        <a href="https://www.linkedin.com/company/la-chouette-marketing/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-accent"></div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <p class="eyebrow"><a href="services.html" style="color:inherit; opacity:0.85;">← Nos services</a> / Identité de marque et analyse marketing au Québec</p>
+    <h1>Avant de foncer, il faut savoir où on est</h1>
+    <p>Un logo, une charte graphique, un audit qui dit la vérité sur votre positionnement actuel. On pose les bases avant de bâtir dessus.</p>
+    <a href="contact.html" class="btn btn-gold">Discutons de votre projet</a>
+  </div>
+</section>
+
+<section>
+  <div class="container two-col">
+    <div>
+      <h2>Ce qui est inclus</h2>
+      <ul class="services-list" style="color: var(--charbon);">
+        <li>Création de logo</li>
+        <li>Graphisme et documents de marque</li>
+        <li>Audit marketing complet</li>
+        <li>Photographie</li>
+      </ul>
+    </div>
+    <div>
+      <h2>On commence où vous en avez besoin</h2>
+      <p>Vous démarrez et vous n'avez encore rien, ou votre image actuelle ne vous représente plus ? On peut commencer petit, un simple logo pour démarrer, et grandir de là quand le moment sera venu.</p>
+      <p>Une PME au Québec n'a pas besoin d'une identité de marque complexe. Elle a besoin d'une identité claire, qui lui ressemble.</p>
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center;">
+  <div class="container" style="max-width: 700px;">
+    <h2>On en discute ?</h2>
+    <p>Une rencontre découverte de 20 minutes, gratuite, pour voir ce qui s'applique à votre réalité.</p>
+    <a href="contact.html" class="btn btn-gold">Réserver ma rencontre découverte</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Se tenir informé(e)</h3>
+        <p>Inscrivez-vous à notre <a href="#" style="color:inherit;">infolettre</a> pour des astuces exclusives et des offres spéciales, 4 fois par an !</p>
+        <form class="newsletter-form" action="https://formspree.io/f/meaoqabe" method="POST">
+          <input type="email" name="email" placeholder="Adresse e-mail" required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div class="footer-contact">
+        <a href="#">Montréal, Canada</a>
+        <a href="mailto:evelyn@lachouettemarketing.ca">evelyn@lachouettemarketing.ca</a>
+        <a href="contact.html">Rendez-vous</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 La Chouette Marketing</span>
+      <span>lachouettemarketing.ca</span>
+    </div>
+  </div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

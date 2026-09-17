@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendez-vous et contact | La Chouette Marketing</title>
+<meta name="description" content="Réservez votre rencontre découverte gratuite de 20 minutes ou une consultation marketing de 30 minutes avec La Chouette Marketing.">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="Logo La Chouette Marketing">
+      <span>La Chouette Marketing</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="qui-on-est.html">Qui on est</a>
+      <a href="comment-ca-fonctionne.html">Comment ça fonctionne</a>
+      <a href="services.html">Nos services</a>
+      <a href="blogue.html">Blogue</a>
+      <a href="contact.html" class="active">Rendez-vous</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61578278797304" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        <a href="https://www.linkedin.com/company/la-chouette-marketing/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-accent"></div>
+</header>
+
+<section class="hero hero-compact">
+  <div class="container">
+    <p class="eyebrow">On se parle ?</p>
+    <h1>Réservons un moment pour en discuter</h1>
+    <p>Pas de rendez-vous téléphonique imposé. Remplissez le formulaire ci-dessous et on vous répond par courriel dans les 48h pour convenir de la suite.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="offer-cards" style="margin-bottom: 50px;">
+      <div class="offer-card">
+        <span class="tag">Porte d'entrée</span>
+        <h3>Rencontre découverte</h3>
+        <p class="price">Gratuite <span>· 20 minutes</span></p>
+        <p>On valide ensemble si ça clique, et vous repartez avec une ou deux pistes marketing concrètes pour votre projet.</p>
+      </div>
+      <div class="offer-card featured">
+        <span class="tag">Pour aller plus loin</span>
+        <h3>Consultation marketing</h3>
+        <p class="price">75 $ <span>· 30 minutes, à l'unité</span></p>
+        <p>Une séance de travail concrète pour une question précise, sans attendre un mandat complet.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h2>Décrivez-nous votre besoin</h2>
+        <p>Plus vous nous en dites, mieux on peut préparer la conversation. Précisez si vous souhaitez la rencontre gratuite ou la consultation à 75$.</p>
+      </div>
+      <div>
+        <form class="contact-form" action="https://formspree.io/f/meaoqabe" method="POST">
+          <label for="nom">Nom (obligatoire)</label>
+          <input type="text" id="nom" name="nom" required>
+
+          <label for="email">E-mail (obligatoire)</label>
+          <input type="email" id="email" name="email" required>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter" style="margin:0; font-weight:400; color:inherit;">S'inscrire pour recevoir nos actualités</label>
+          </div>
+
+          <label for="besoin">Décrivez-nous votre besoin (obligatoire)</label>
+          <textarea id="besoin" name="besoin" placeholder="Salut ! Je m'appelle.." required></textarea>
+
+          <button type="submit" class="btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Se tenir informé(e)</h3>
+        <p>Inscrivez-vous à notre <a href="#" style="color:inherit;">infolettre</a> pour des astuces exclusives et des offres spéciales, 4 fois par an !</p>
+        <form class="newsletter-form" action="https://formspree.io/f/meaoqabe" method="POST">
+          <input type="email" name="email" placeholder="Adresse e-mail" required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <div class="footer-contact">
+        <a href="#">Montréal, Canada</a>
+        <a href="mailto:evelyn@lachouettemarketing.ca">evelyn@lachouettemarketing.ca</a>
+        <a href="contact.html">Rendez-vous</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 La Chouette Marketing</span>
+      <span>lachouettemarketing.ca</span>
+    </div>
+  </div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>
