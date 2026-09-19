@@ -559,9 +559,7 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 }
 
 .service-bridge-wrap {
-  background: linear-gradient(135deg, rgba(45,147,173,0.08), rgba(255,215,0,0.08));
-  border-radius: 10px;
-  padding: 20px 24px;
+  padding: 0;
   margin-bottom: 26px;
 }
 
