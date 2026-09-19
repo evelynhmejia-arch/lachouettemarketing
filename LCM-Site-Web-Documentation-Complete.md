@@ -153,7 +153,6 @@ LCM, c'est une chouette, pas la sage contemplative qu'on imagine, la vraie : cel
 | `contact.html` | Page de contact / prise de rendez-vous |
 | `style.css` | Feuille de style unique, partagée par toutes les pages |
 | `forms.js` | Script pour le formulaire de contact et l'infolettre |
-| `cookie-consent.js` | Bandeau de consentement Google Analytics (voir section 2.5) |
 | `sitemap.xml` | Liste des pages pour Google |
 | `robots.txt` | Autorise l'indexation, pointe vers le sitemap |
 | `logo.png`, `mandat-*.jpg`, `og-image.jpg` | Assets visuels |
@@ -161,8 +160,8 @@ LCM, c'est une chouette, pas la sage contemplative qu'on imagine, la vraie : cel
 
 ### 2.5 Analytics et SEO déjà en place
 
-- **Google Analytics 4** : ID `G-KHN1MNTPPH`, chargé en mode "consentement par défaut refusé" (Google Consent Mode). Le tag `gtag` est dans le `<head>` de chaque page, mais ne collecte rien tant que `cookie-consent.js` n'a pas reçu un clic "Accepter".
-- **`cookie-consent.js`** : injecte un bandeau discret en bas de l'écran (teal, un bouton "Accepter" doré, un bouton "Refuser" transparent), stocke le choix dans `localStorage`, et met à jour le consentement GA en conséquence. Ce fichier doit être présent à la racine du repo pour que le bandeau s'affiche — vérifier régulièrement qu'un futur upload en masse ne l'a pas oublié.
+- **Google Analytics 4** : ID `G-KHN1MNTPPH`, en **mode anonymisé sans cookie de suivi individuel** (`anonymize_ip: true`, `client_storage: 'none'`, `allow_google_signals: false`, signaux publicitaires désactivés). Choix délibéré : capte 100% du trafic sans bandeau de consentement, en échange de ne pas pouvoir suivre un visiteur individuellement entre deux visites ni faire du remarketing publicitaire. Voir historique ci-dessous.
+- **Pas de bandeau de consentement** : un premier essai avec bandeau + `cookie-consent.js` a été abandonné, jugé trop discret pour générer assez de clics "Accepter" (peu de visiteurs le remarquaient, surtout mobile). Le mode anonymisé actuel rend le bandeau légalement inutile.
 - **Schema.org (JSON-LD)** : bloc `Organization` sur les 17 pages, bloc `BlogPosting` en plus sur les 6 articles (avec leur vraie date de publication affichée sur la page).
 - **Google Search Console** : propriété vérifiée au niveau du domaine (survit à tout changement d'hébergeur). Sitemap soumis.
 

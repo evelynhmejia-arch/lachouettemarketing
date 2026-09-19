@@ -20,65 +20,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Rasa:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) — mode anonymisé, sans cookie de suivi individuel -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHN1MNTPPH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('consent', 'default', {
-    'analytics_storage': 'denied'
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
   });
   gtag('js', new Date());
-  gtag('config', 'G-KHN1MNTPPH', { 'anonymize_ip': true });
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "La Chouette Marketing",
-  "url": "https://lachouettemarketing.ca",
-  "logo": "https://lachouettemarketing.ca/logo.png",
-  "image": "https://lachouettemarketing.ca/og-image.jpg",
-  "description": "Agence marketing indépendante québécoise offrant visibilité et réseaux sociaux, rédaction et contenu, identité de marque, ainsi que gestion de projet et intégration de l'IA pour les PME au Québec.",
-  "founder": {
-    "@type": "Person",
-    "name": "Evelyn Hunter"
-  },
-  "areaServed": {
-    "@type": "State",
-    "name": "Québec"
-  },
-  "email": "evelyn@lachouettemarketing.ca",
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61578278797304",
-    "https://www.linkedin.com/company/la-chouette-marketing/"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Petit budget marketing : cinq façons d'avancer quand même",
-  "datePublished": "2026-06-10",
-  "author": {
-    "@type": "Person",
-    "name": "Evelyn Hunter"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "La Chouette Marketing",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://lachouettemarketing.ca/logo.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://lachouettemarketing.ca/budget-marketing-limite-par-ou-commencer.html"
-  },
-  "inLanguage": "fr-CA"
-}
+  gtag('config', 'G-KHN1MNTPPH', {
+    'anonymize_ip': true,
+    'client_storage': 'none',
+    'allow_google_signals': false,
+    'allow_ad_personalization_signals': false
+  });
 </script>
 </head>
 <body>
@@ -169,6 +128,5 @@
 </footer>
 
 <script src="forms.js"></script>
-<script src="cookie-consent.js"></script>
 </body>
 </html>
