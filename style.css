@@ -514,60 +514,64 @@ h3 { font-size: 21px; margin-bottom: 8px; }
 }
 
 .service-hooks {
-  list-style: none;
-  margin: 22px 0 22px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0;
 }
 
-@media (min-width: 701px) {
-  .service-hooks { margin-left: 80px; }
+@media (max-width: 900px) {
+  .service-hooks { grid-template-columns: 1fr 1fr; }
 }
 
-.service-hooks li {
-  font-family: 'Lora', serif;
-  font-size: 17px;
-  color: var(--teal);
-  padding-left: 30px;
-  position: relative;
-  line-height: 1.4;
+@media (max-width: 600px) {
+  .service-hooks { grid-template-columns: 1fr; }
 }
 
-.service-hooks li::before {
-  content: "?";
-  position: absolute;
-  left: 0;
-  top: -2px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+.service-hook-card {
   background: var(--blanc-casse);
-  color: var(--bleu);
-  font-family: 'Rasa', serif;
-  font-weight: 700;
-  font-size: 13px;
+  border-radius: 10px;
+  padding: 20px 18px 18px;
+  position: relative;
+}
+
+.service-hook-card .qmark {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: var(--or);
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.service-hook-card p {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  color: var(--teal);
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.service-bridge-wrap {
+  background: linear-gradient(135deg, rgba(45,147,173,0.08), rgba(255,215,0,0.08));
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 26px;
 }
 
 .service-bridge {
   font-size: 16px;
   color: var(--charbon);
+  margin-bottom: 0;
 }
 
-@media (min-width: 701px) {
-  .service-bridge { margin-left: 80px; max-width: 640px; }
-}
-
-.service-block-cta {
-  margin-top: 26px;
-}
-
-@media (min-width: 701px) {
-  .service-block-cta { margin-left: 80px; }
-}
+.service-block-cta { margin-top: 0; }
 
 /* ===== SERVICE CARDS ===== */
 .service-cards {
