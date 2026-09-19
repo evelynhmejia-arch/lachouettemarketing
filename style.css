@@ -501,6 +501,74 @@ h3 { font-size: 21px; margin-bottom: 8px; }
   line-height: 1.35;
 }
 
+/* ===== SERVICE BLOCKS v2 (fiche par catégorie) ===== */
+.service-block {
+  background: var(--blanc);
+  border-radius: 6px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(18,44,52,0.06);
+}
+
+@media (max-width: 700px) {
+  .service-block { padding: 28px 22px; }
+}
+
+.service-hooks {
+  list-style: none;
+  margin: 22px 0 22px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 701px) {
+  .service-hooks { margin-left: 80px; }
+}
+
+.service-hooks li {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  color: var(--teal);
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.service-hooks li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blanc-casse);
+  color: var(--bleu);
+  font-family: 'Rasa', serif;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-bridge {
+  font-size: 16px;
+  color: var(--charbon);
+}
+
+@media (min-width: 701px) {
+  .service-bridge { margin-left: 80px; max-width: 640px; }
+}
+
+.service-block-cta {
+  margin-top: 26px;
+}
+
+@media (min-width: 701px) {
+  .service-block-cta { margin-left: 80px; }
+}
+
 /* ===== SERVICE CARDS ===== */
 .service-cards {
   display: grid;
